@@ -1,1 +1,0 @@
-# gambaltria_wiki
