@@ -13,11 +13,36 @@ firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
-function writeUserData(ref, value) {
-  firebase.database().ref(ref).set(value);
+function writeData(ref, value) {
+    database.ref(ref).set(value);
 }
 
-function doAct(){
-    name = document.getElementById("input_user_name").value;
-    writeUserData(name, 'connect');
+function readData(ref, element) {
+    database.ref(ref).on("value", snapshot => {
+        const data = JSON.stringify(snapshot.val());
+        element.innerText = data;
+    });
+}
+
+
+function send_chat() {
+    var name = document.getElementById("input_user_name").value;
+    var chat = document.getElementById("input_user_chat").value;
+    writeData('chat/', chat);
+}
+
+function read_chat() {
+    var chat = document.getElementById("show_chat");
+    readData('chat/', chat);
+}
+
+
+function send_noti() {
+    var noti = document.getElementById("input_noti").value;
+    writeData('noti/', noti);
+}
+
+function read_noti() {
+    var noti = document.getElementById("noti_box");
+    readData('noti/', noti);
 }
