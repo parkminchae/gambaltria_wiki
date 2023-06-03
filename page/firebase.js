@@ -24,16 +24,26 @@ function readData(ref, element) {
     });
 }
 
+function readData_list(ref, element) {
+    database.ref(ref).on("value", snapshot => {
+        const data = snapshot.val();
+        const chat = document.createElement("li");
+        const textNode = document.createTextNode(JSON.stringify(data));
+        chat.appendChild(textNode);
+        document.getElementById("show_chat").appendChild(chat);
+    });
+}
+
 
 function send_chat() {
     var name = document.getElementById("input_user_name").value;
     var chat = document.getElementById("input_user_chat").value;
-    writeData('chat/', chat);
+    writeData('chat/',name +":" +chat);
 }
 
 function read_chat() {
     var chat = document.getElementById("show_chat");
-    readData('chat/', chat);
+    readData_list('chat/', chat);
 }
 
 
