@@ -11,9 +11,39 @@
 <body>
      <h1>Hello World!</h1>
 
+        <hr width=”100%” noshade />
+
         <div class="d-grid gap-2">
             <button id='btn' class="btn btn-primary" onclick="doAction();">0</button>
         </div>
+
+        <hr width=”100%” noshade />
+
+        <!-- Button trigger modal -->
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                의미는 없지만 간지나는 버튼
+            </button>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">공지</h1>
+                </div>
+                <div class="modal-body">
+                    일해라 인민들아
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+  
 
         <script>
             var cnt = 0;
