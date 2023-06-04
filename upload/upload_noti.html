@@ -19,13 +19,13 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="upload/project_upload.html">project</a>
+                <a class="nav-link" href="/upload/project_upload.html">project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="upload/upload_noti.html">noti</a>
+                <a class="nav-link active"  aria-current="page"  href="#">noti</a>
               </li>
             </ul>
             <span class="navbar-text">
@@ -35,51 +35,19 @@
         </div>
     </nav>
 
-    <hr width=”100%” noshade />
-
-    <div class="d-grid gap-2">
-        <button id='btn' class="btn btn-primary, btn btn-outline-primary" onclick="doAction();">0</button>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="공지를 입력하세요" aria-label="Recipient's username" aria-describedby="button-addon2" id="input_noti">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="send_noti();">공지</button>
     </div>
     
 
-    <hr width=”100%” noshade />
-
-    <!-- Button trigger modal -->
-    <div class="d-grid gap-2">
-        <button type="button" class="btn btn-primary, btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="read_noti();">
-            의미는 없지만 간지나는  공지 버튼
-        </button>
-    </div>
-    
-    
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">공지</h1>
-            </div>
-            <div class="modal-body">
-                <div id="noti_box">asfd</div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-        </div>
-    </div>
-    <script src="index.js"></script>
-
-    
-
-      
     <!--firebasw 부분-->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
-    <script src="firebase/firebase.js"> </script>
-
+    <script src="/firebase/firebase.js"> </script>
+    
 </body>
 </html>
