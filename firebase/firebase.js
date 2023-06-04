@@ -52,7 +52,5 @@ function send_noti() {
     writeData('noti/', noti);
 }
 
-function read_noti() {
-    var noti = document.getElementById("noti_box");
+var noti = document.getElementById("noti_box");
     readData('noti/', noti);
-}
