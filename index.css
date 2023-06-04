@@ -1,0 +1,13 @@
+.new-m-box {
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.new-m-content {
+    padding: 20px;
+}
