@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+
+a:link {
+    color: #F2F1EC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+
+
+
+#main_page {
+    padding: 5vw;
+    background-color: #2C383C;
+    height: 100vw;
+    width: 100vw;
+}
+
+
+#nav_list {
+    padding-left: 0;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.nav_bar {
+    float: right;
+    color: #F2F1EC;
+    margin-right: 5vw;
+
+    padding: 20px;
+    padding-top: 5vw;
+    height: 80vw;
+}
+
+
+.main {
+    color: #F2F1EC;
+    height: 100vw;
+
+}
+
+#main_disc {
+    font-family: 'Black Han Sans', sans-serif;
+}
