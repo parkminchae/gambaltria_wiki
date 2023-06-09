@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #919191;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+}
+
+.font-normal {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.font-big {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
