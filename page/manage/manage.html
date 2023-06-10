@@ -24,7 +24,27 @@
         </ul>
     </nav>
 
+    <div class="noti_edit">
+        <p class="font-big" style="font-size: 50px;"> 공지 작성</p>
+        <div class="noti_edit_input">
+            <input class="noti_edit_input_bar" type="text" placeholder="공지를 입력하세요.">
+            <button class="noti_edit_input_btn" type="button" onclick="send_noti()">작성</button>
+        </div>
+
+    </div>
+
+    <p id="noti">asfd</p>
+
+
     <script src="/public/main.js"></script>
+
+    <!--firebasw 부분-->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="/firebase/firebase.js"> </script>
 </body>
 
 </html>

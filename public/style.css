@@ -15,8 +15,7 @@ body {
 }
 
 .noti_box {
-  background-color: white;
-  opacity: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
 
   border-radius: 15px;
 
@@ -26,11 +25,18 @@ body {
   position: absolute;
   right: 500px;
   top: 280px;
+
+  text-align: center;
 }
 
+
+.noti_title p {
+  font-size: 50px;
+}
+
+
 .schedule_box {
-  background-color: white;
-  opacity: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
 
   border-radius: 15px;
 
@@ -41,8 +47,6 @@ body {
   right: 50px;
   top: 280px;
 }
-
-
 
 
 
