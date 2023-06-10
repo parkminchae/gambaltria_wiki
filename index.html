@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="public/preset.css">
+    <link rel="stylesheet" href="public/navbar.css">
     <title>겜발트리아 아카이브</title>
 </head>
 
@@ -15,47 +16,25 @@
         autoplay="autoplay" style="width: 1920px; height: 1080px;"></video>
     <nav class="navbar">
         <div class="navbar-logo">
-            <p class="font-big">겜발트리아 아카이브</p>
+            <p class="font-big" onclick="go_home();">겜발트리아 아카이브</p>
         </div>
         <ul class="navbar-links font-normal">
-            <li><a href="#">프로젝트</a></li>
-            <li><a href="#">회의록</a></li>
-            <li><a href="#">관리</a></li>
-            <li><a href="#">내정보</a></li>
+            <li><a href="page/project/project.html">프로젝트</a></li>
+            <li><a href="page/meeting/meeting.html">회의록</a></li>
+            <li><a href="page/manage/manage.html">관리</a></li>
+            <li><a href="page/my/my.html">내정보</a></li>
         </ul>
     </nav>
 
-    <sub class="side">
-        <div class="side-space">
-            <label class="switch">
-                
-                <input checked="checked" type="checkbox">
-                <div class="button">
-                  <div class="light"></div>
-                  <div class="dots"></div>
-                  <div class="characters"></div>
-                  <div class="shine"></div>
-                  <div class="shadow"></div>
-                </div>
-              </label>
+    <div class="noti_box">
 
-        </div>
-        <ul class="side-list">
-            <li class="noti">
-                <div>
-                    <p class="noti-title font-big"> 공지 </p>
-                    <p class="noti-detail font-normal"> 공지 내용</p>
-                </div>
-            </li>
-            <li class="schedule">
-                <div>
-                    <p class="font-big"> 스캐쥴 예정</p>
-                </div>
-            </li>
-        </ul>
-        </div>
-    </sub>
+    </div>
 
+    <div class="schedule_box">
+
+    </div>
+
+    <script src="public/main.js"></script>
 </body>
 
 </html>

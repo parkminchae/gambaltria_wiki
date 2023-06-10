@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 70px;
+  }
+  
+  .navbar-logo p {
+    color: #00D2FF;
+    font-size: 2rem;
+    margin: 0
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .navbar-links li {
+    padding: 8px 12px;
+  }
